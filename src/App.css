@@ -1,0 +1,40 @@
+/* CSS Variables for theming */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --navbar-bg: rgba(255, 255, 255, 0.98);
+  --border-color: #000000;
+  --button-bg: #000000;
+  --button-text: #ffffff;
+  --hover-bg: #f5f5f5;
+}
+
+.dark-theme {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --navbar-bg: rgba(26, 26, 26, 0.98);
+  --border-color: #ffffff;
+  --button-bg: #ffffff;
+  --button-text: #000000;
+  --hover-bg: #333333;
+}
+
+.App {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+/* Container utility class */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
